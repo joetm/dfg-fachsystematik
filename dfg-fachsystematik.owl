@@ -115,6 +115,7 @@
 
     <owl:NamedIndividual rdf:about="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Geistes-_und_Sozialwissenschaften">
         <rdf:type rdf:resource="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Kategorie"/>
+        <rdfs:label xml:lang="de">Geistes- und Sozialwissenschaften</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -123,6 +124,7 @@
 
     <owl:NamedIndividual rdf:about="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Ingenieurwissenschaften">
         <rdf:type rdf:resource="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Kategorie"/>
+        <rdfs:label xml:lang="de">Ingenieurwissenschaften</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -131,6 +133,7 @@
 
     <owl:NamedIndividual rdf:about="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Lebenswissenschaften">
         <rdf:type rdf:resource="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Kategorie"/>
+        <rdfs:label xml:lang="de">Lebenswissenschaften</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -139,6 +142,7 @@
 
     <owl:NamedIndividual rdf:about="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Naturwissenschaften">
         <rdf:type rdf:resource="http://ontologies.mfn-berlin.de/dfg-fachsystematik#Kategorie"/>
+        <rdfs:label xml:lang="de">Naturwissenschaften</rdfs:label>
     </owl:NamedIndividual>
     
 
