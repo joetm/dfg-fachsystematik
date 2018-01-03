@@ -1,7 +1,7 @@
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik> <http://www.w3.org/2002/07/owl#versionIRI> <http://ontologies.mfn-berlin.de/dfg-fachsystematik/1.0.0> .
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jonas Oppenlaender" .
-<http://ontologies.mfn-berlin.de/dfg-fachsystematik> <http://www.w3.org/2000/01/rdf-schema#label> "Fachsystematik"@de .
+<http://ontologies.mfn-berlin.de/dfg-fachsystematik> <http://www.w3.org/2000/01/rdf-schema#label> "DFG Fachsystematik"@de .
 # 
 # 
 # #################################################################

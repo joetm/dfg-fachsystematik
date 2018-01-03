@@ -9,7 +9,7 @@
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik> rdf:type owl:Ontology ;
                                                       owl:versionIRI <http://ontologies.mfn-berlin.de/dfg-fachsystematik/1.0.0> ;
                                                       rdfs:isDefinedBy "Jonas Oppenlaender"^^xsd:string ;
-                                                      rdfs:label "Fachsystematik"@de .
+                                                      rdfs:label "DFG Fachsystematik"@de .
 
 #################################################################
 #    Object Properties

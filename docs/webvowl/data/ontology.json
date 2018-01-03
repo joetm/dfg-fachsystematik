@@ -5,7 +5,7 @@
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://ontologies.mfn-berlin.de/dfg-fachsystematik" ],
     "iri" : "http://ontologies.mfn-berlin.de/dfg-fachsystematik",
     "labels" : {
-      "de" : "Fachsystematik"
+      "de" : "DFG Fachsystematik"
     },
     "other" : {
       "isDefinedBy" : [ {

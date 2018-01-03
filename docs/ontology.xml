@@ -11,7 +11,7 @@
     <owl:Ontology rdf:about="http://ontologies.mfn-berlin.de/dfg-fachsystematik">
         <owl:versionIRI rdf:resource="http://ontologies.mfn-berlin.de/dfg-fachsystematik/1.0.0"/>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jonas Oppenlaender</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="de">Fachsystematik</rdfs:label>
+        <rdfs:label xml:lang="de">DFG Fachsystematik</rdfs:label>
     </owl:Ontology>
     
 
