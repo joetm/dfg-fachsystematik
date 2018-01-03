@@ -1,4 +1,6 @@
 DFG Fachsystematik
 ==================
 
-Fächer und Fachkollegien
+Struktur der Fachkollegien und Fächer
+
+Quelle: http://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher/
