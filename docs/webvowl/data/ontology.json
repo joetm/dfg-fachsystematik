@@ -28,12 +28,18 @@
     "type" : "owl:Class"
   }, {
     "id" : "4",
-    "type" : "owl:Thing"
+    "type" : "owl:unionOf"
   }, {
     "id" : "5",
-    "type" : "rdfs:Literal"
+    "type" : "owl:unionOf"
   }, {
     "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
     "type" : "rdfs:Literal"
   }, {
     "id" : "2",
@@ -1544,22 +1550,32 @@
     } ],
     "id" : "0"
   }, {
+    "instances" : 0,
+    "union" : [ "2", "0" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "4"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "3" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "5"
+  }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "4",
+    "id" : "6",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "5",
+    "id" : "7",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "6",
+    "id" : "8",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1953,19 +1969,19 @@
     "id" : "1",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "7",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "8",
-    "type" : "owl:disjointWith"
-  }, {
     "id" : "9",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "10",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
@@ -1977,27 +1993,27 @@
     "range" : "0",
     "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "7"
+    "id" : "9"
   }, {
     "range" : "3",
     "domain" : "0",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "8"
+    "id" : "10"
   }, {
     "iri" : "http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr",
     "baseIri" : "http://ontologies.mfn-berlin.de/dfg-fachsystematik",
-    "range" : "5",
+    "range" : "7",
     "label" : {
       "de" : "Fach-Nr.",
       "IRI-based" : "Fach-Nr"
     },
-    "domain" : "4",
+    "domain" : "6",
     "attributes" : [ "datatype" ],
-    "id" : "9"
+    "id" : "11"
   }, {
     "iri" : "http://purl.org/dc/terms/isPartOf",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "4",
+    "range" : "5",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2014,18 +2030,18 @@
     "comment" : {
       "en" : "A related resource in which the described resource is physically or logically included."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "10"
+    "attributes" : [ "object", "external", "transitive" ],
+    "id" : "12"
   }, {
     "iri" : "http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr",
     "baseIri" : "http://ontologies.mfn-berlin.de/dfg-fachsystematik",
-    "range" : "6",
+    "range" : "8",
     "label" : {
       "de" : "Fachkollegium-Nr.",
       "IRI-based" : "FK-Nr"
     },
-    "domain" : "4",
+    "domain" : "6",
     "attributes" : [ "datatype" ],
-    "id" : "11"
+    "id" : "13"
   } ]
 }
