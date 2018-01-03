@@ -1,15 +1,15 @@
-@prefix : <http://ontologies.mfn-berlin.de/dfg-fachsystematik#> .
+@prefix : <https://joetm.github.io/dfg-fachsystematik#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://ontologies.mfn-berlin.de/dfg-fachsystematik> .
+@base <https://joetm.github.io/dfg-fachsystematik> .
 
-<http://ontologies.mfn-berlin.de/dfg-fachsystematik> rdf:type owl:Ontology ;
-                                                      owl:versionIRI <http://ontologies.mfn-berlin.de/dfg-fachsystematik/1.0.0> ;
-                                                      rdfs:isDefinedBy "Jonas Oppenlaender"^^xsd:string ;
-                                                      rdfs:label "DFG Fachsystematik"@de .
+<https://joetm.github.io/dfg-fachsystematik> rdf:type owl:Ontology ;
+                                              owl:versionIRI :version-1.0.0 ;
+                                              rdfs:isDefinedBy "Jonas Oppenlaender"^^xsd:string ;
+                                              rdfs:label "DFG Fachsystematik"@de .
 
 #################################################################
 #    Object Properties
@@ -37,7 +37,7 @@
 #    Data properties
 #################################################################
 
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr
+###  https://joetm.github.io/dfg-fachsystematik#FK-Nr
 :FK-Nr rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
        rdfs:domain :Fachkollegium ;
@@ -45,7 +45,7 @@
        rdfs:label "Fachkollegium-Nr."@de .
 
 
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr
+###  https://joetm.github.io/dfg-fachsystematik#Fach-Nr
 :Fach-Nr rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Fach ;
@@ -57,17 +57,17 @@
 #    Classes
 #################################################################
 
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach
+###  https://joetm.github.io/dfg-fachsystematik#Fach
 :Fach rdf:type owl:Class ;
       rdfs:label "Fach"@de .
 
 
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fachkollegium
+###  https://joetm.github.io/dfg-fachsystematik#Fachkollegium
 :Fachkollegium rdf:type owl:Class ;
                rdfs:label "Fachkollegium"@de .
 
 
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Kategorie
+###  https://joetm.github.io/dfg-fachsystematik#Kategorie
 :Kategorie rdf:type owl:Class ;
            rdfs:label "Kategorie"@de .
 
@@ -75,30 +75,6 @@
 #################################################################
 #    Individuals
 #################################################################
-
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Geistes-_und_Sozialwissenschaften
-:Geistes-_und_Sozialwissenschaften rdf:type owl:NamedIndividual ,
-                                            :Kategorie ;
-                                   rdfs:label "Geistes- und Sozialwissenschaften"@de .
-
-
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Ingenieurwissenschaften
-:Ingenieurwissenschaften rdf:type owl:NamedIndividual ,
-                                  :Kategorie ;
-                         rdfs:label "Ingenieurwissenschaften"@de .
-
-
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Lebenswissenschaften
-:Lebenswissenschaften rdf:type owl:NamedIndividual ,
-                               :Kategorie ;
-                      rdfs:label "Lebenswissenschaften"@de .
-
-
-###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Naturwissenschaften
-:Naturwissenschaften rdf:type owl:NamedIndividual ,
-                              :Kategorie ;
-                     rdfs:label "Naturwissenschaften"@de .
-
 
 ###  http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101
 <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101> rdf:type owl:NamedIndividual ,
@@ -2188,6 +2164,30 @@
                                                                                    rdfs:label "Geotechnik, Wasserbau"@de .
 
 
+###  https://joetm.github.io/dfg-fachsystematik#Geistes-_und_Sozialwissenschaften
+:Geistes-_und_Sozialwissenschaften rdf:type owl:NamedIndividual ,
+                                            :Kategorie ;
+                                   rdfs:label "Geistes- und Sozialwissenschaften"@de .
+
+
+###  https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften
+:Ingenieurwissenschaften rdf:type owl:NamedIndividual ,
+                                  :Kategorie ;
+                         rdfs:label "Ingenieurwissenschaften"@de .
+
+
+###  https://joetm.github.io/dfg-fachsystematik#Lebenswissenschaften
+:Lebenswissenschaften rdf:type owl:NamedIndividual ,
+                               :Kategorie ;
+                      rdfs:label "Lebenswissenschaften"@de .
+
+
+###  https://joetm.github.io/dfg-fachsystematik#Naturwissenschaften
+:Naturwissenschaften rdf:type owl:NamedIndividual ,
+                              :Kategorie ;
+                     rdfs:label "Naturwissenschaften"@de .
+
+
 #################################################################
 #    General axioms
 #################################################################
@@ -2201,11 +2201,7 @@
 
 
 [ rdf:type owl:AllDifferent ;
-  owl:distinctMembers ( :Geistes-_und_Sozialwissenschaften
-                        :Ingenieurwissenschaften
-                        :Lebenswissenschaften
-                        :Naturwissenschaften
-                        <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101>
+  owl:distinctMembers ( <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101>
                         <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101#101-01>
                         <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101#101-02>
                         <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101#101-03>
@@ -2466,6 +2462,10 @@
                         <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-04>
                         <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-05>
                         <http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-06>
+                        :Geistes-_und_Sozialwissenschaften
+                        :Ingenieurwissenschaften
+                        :Lebenswissenschaften
+                        :Naturwissenschaften
                       )
 ] .
 
