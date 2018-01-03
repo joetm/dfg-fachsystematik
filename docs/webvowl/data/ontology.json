@@ -27,17 +27,14 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "9",
-    "type" : "owl:unionOf"
-  }, {
     "id" : "2",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "5",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
   }, {
     "id" : "4",
     "type" : "owl:Class"
@@ -392,16 +389,6 @@
     } ],
     "id" : "1"
   }, {
-    "instances" : 0,
-    "union" : [ "4", "1" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "8"
-  }, {
-    "instances" : 0,
-    "union" : [ "1", "7" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "9"
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "2",
@@ -414,6 +401,13 @@
     "id" : "5",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "https://joetm.github.io/dfg-fachsystematik#Fach",
@@ -1852,18 +1846,18 @@
         "IRI-based" : "205-32"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=207#207-10",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=207",
-      "labels" : {
-        "de" : "Tierernährung und Tierernährungsphysiologie",
-        "IRI-based" : "207-10"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-31",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205",
       "labels" : {
         "de" : "Radioonkologie und Strahlenbiologie",
         "IRI-based" : "205-31"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=207#207-10",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=207",
+      "labels" : {
+        "de" : "Tierernährung und Tierernährungsphysiologie",
+        "IRI-based" : "207-10"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=404#404-02",
@@ -1965,13 +1959,13 @@
     "id" : "6",
     "type" : "owl:disjointWith"
   }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "10",
     "type" : "owl:disjointWith"
   }, {
     "id" : "11",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "12",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -1983,7 +1977,7 @@
       "IRI-based" : "FK-Nr"
     },
     "domain" : "1",
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "0"
   }, {
     "iri" : "https://joetm.github.io/dfg-fachsystematik#Fach-Nr",
@@ -1994,27 +1988,27 @@
       "IRI-based" : "Fach-Nr"
     },
     "domain" : "4",
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "3"
   }, {
     "range" : "7",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "6"
   }, {
     "range" : "1",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "10"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
   }, {
     "range" : "7",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "11"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
   }, {
     "iri" : "http://purl.org/dc/terms/isPartOf",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "9",
+    "range" : "8",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2031,7 +2025,7 @@
     "comment" : {
       "en" : "A related resource in which the described resource is physically or logically included."
     },
-    "attributes" : [ "external", "object", "transitive" ],
-    "id" : "12"
+    "attributes" : [ "external", "transitive", "object" ],
+    "id" : "11"
   } ]
 }

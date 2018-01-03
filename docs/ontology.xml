@@ -33,22 +33,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://joetm.github.io/dfg-fachsystematik#Fach"/>
-                    <rdf:Description rdf:about="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
-                    <rdf:Description rdf:about="https://joetm.github.io/dfg-fachsystematik#Kategorie"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
         <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
