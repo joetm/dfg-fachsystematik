@@ -55,7 +55,7 @@
     <owl:DatatypeProperty rdf:about="https://joetm.github.io/dfg-fachsystematik#FK-Nr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label xml:lang="de">Fachkollegium-Nr.</rdfs:label>
     </owl:DatatypeProperty>
 
@@ -2114,7 +2114,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=311">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Naturwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">311</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">311</FK-Nr>
         <rdfs:label xml:lang="de">Astrophysik und Astronomie</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2323,7 +2323,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=401">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">401</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">401</FK-Nr>
         <rdfs:label xml:lang="de">Produktionstechnik</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2400,7 +2400,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=402">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">402</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">402</FK-Nr>
         <rdfs:label xml:lang="de">Mechanik und Konstruktiver Maschinenbau</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2455,7 +2455,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=403">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">403</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">403</FK-Nr>
         <rdfs:label xml:lang="de">Verfahrenstechnik, Technische Chemie</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2510,7 +2510,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=404">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">404</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">404</FK-Nr>
         <rdfs:label xml:lang="de">Wärmeenergietechnik, Thermische Maschinen, Strömungsmechanik</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2565,7 +2565,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=405">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">405</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">405</FK-Nr>
         <rdfs:label xml:lang="de">Werkstofftechnik</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2631,7 +2631,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=406">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">406</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">406</FK-Nr>
         <rdfs:label xml:lang="de">Materialwissenschaft</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2697,7 +2697,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=407">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">407</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">407</FK-Nr>
         <rdfs:label xml:lang="de">Systemtechnik</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2774,7 +2774,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=408">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">408</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">408</FK-Nr>
         <rdfs:label xml:lang="de">Elektrotechnik und Informationstechnik</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2818,7 +2818,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">409</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">409</FK-Nr>
         <rdfs:label xml:lang="de">Informatik</rdfs:label>
     </owl:NamedIndividual>
 
@@ -2917,7 +2917,7 @@
     <owl:NamedIndividual rdf:about="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410">
         <rdf:type rdf:resource="https://joetm.github.io/dfg-fachsystematik#Fachkollegium"/>
         <terms:isPartOf rdf:resource="https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften"/>
-        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#string">410</FK-Nr>
+        <FK-Nr rdf:datatype="http://www.w3.org/2001/XMLSchema#int">410</FK-Nr>
         <rdfs:label xml:lang="de">Bauwesen und Architektur</rdfs:label>
     </owl:NamedIndividual>
 
