@@ -2,8 +2,8 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "de", "en", "undefined" ],
-    "baseIris" : [ "https://joetm.github.io/dfg-fachsystematik", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema" ],
-    "iri" : "https://joetm.github.io/dfg-fachsystematik",
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl", "http://www.w3.org/2000/01/rdf-schema", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
     "labels" : {
       "de" : "DFG Fachsystematik"
     },
@@ -24,27 +24,86 @@
     "individualCount" : 265
   },
   "class" : [ {
-    "id" : "1",
-    "type" : "owl:Class"
+    "id" : "6",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "2",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "5",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "8",
+    "id" : "7",
     "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "1",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://joetm.github.io/dfg-fachsystematik#Fachkollegium",
-    "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Kategorie",
+    "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
+    "instances" : 0,
+    "label" : {
+      "de" : "Kategorie",
+      "IRI-based" : "Kategorie"
+    },
+    "individuals" : [ {
+      "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Naturwissenschaften",
+      "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
+      "labels" : {
+        "de" : "Naturwissenschaften",
+        "IRI-based" : "Naturwissenschaften"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Ingenieurwissenschaften",
+      "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
+      "labels" : {
+        "de" : "Ingenieurwissenschaften",
+        "IRI-based" : "Ingenieurwissenschaften"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Lebenswissenschaften",
+      "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
+      "labels" : {
+        "de" : "Lebenswissenschaften",
+        "IRI-based" : "Lebenswissenschaften"
+      }
+    }, {
+      "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Geistes-_und_Sozialwissenschaften",
+      "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
+      "labels" : {
+        "de" : "Geistes- und Sozialwissenschaften",
+        "IRI-based" : "Geistes-_und_Sozialwissenschaften"
+      }
+    } ],
+    "id" : "5"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Fachkollegium",
+    "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
     "instances" : 0,
     "label" : {
       "de" : "Fachkollegium",
@@ -86,6 +145,13 @@
         "IRI-based" : "index.jsp?id=318"
       }
     }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=302",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
+      "labels" : {
+        "de" : "Chemische Festkörper- und Oberflächenforschung",
+        "IRI-based" : "index.jsp?id=302"
+      }
+    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=401",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
       "labels" : {
@@ -107,11 +173,11 @@
         "IRI-based" : "index.jsp?id=203"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=302",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=301",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
       "labels" : {
-        "de" : "Chemische Festkörper- und Oberflächenforschung",
-        "IRI-based" : "index.jsp?id=302"
+        "de" : "Molekülchemie",
+        "IRI-based" : "index.jsp?id=301"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=103",
@@ -126,13 +192,6 @@
       "labels" : {
         "de" : "Pflanzenwissenschaften",
         "IRI-based" : "index.jsp?id=202"
-      }
-    }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=301",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
-      "labels" : {
-        "de" : "Molekülchemie",
-        "IRI-based" : "index.jsp?id=301"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=102",
@@ -226,6 +285,13 @@
         "IRI-based" : "index.jsp?id=205"
       }
     }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=304",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
+      "labels" : {
+        "de" : "Analytik, Methodenentwicklung (Chemie)",
+        "IRI-based" : "index.jsp?id=304"
+      }
+    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=403",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
       "labels" : {
@@ -233,11 +299,18 @@
         "IRI-based" : "index.jsp?id=403"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=304",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=204",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
       "labels" : {
-        "de" : "Analytik, Methodenentwicklung (Chemie)",
-        "IRI-based" : "index.jsp?id=304"
+        "de" : "Mikrobiologie, Virologie und Immunologie",
+        "IRI-based" : "index.jsp?id=204"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
+      "labels" : {
+        "de" : "Literaturwissenschaft",
+        "IRI-based" : "index.jsp?id=105"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=303",
@@ -252,20 +325,6 @@
       "labels" : {
         "de" : "Mechanik und Konstruktiver Maschinenbau",
         "IRI-based" : "index.jsp?id=402"
-      }
-    }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
-      "labels" : {
-        "de" : "Literaturwissenschaft",
-        "IRI-based" : "index.jsp?id=105"
-      }
-    }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=204",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
-      "labels" : {
-        "de" : "Mikrobiologie, Virologie und Immunologie",
-        "IRI-based" : "index.jsp?id=204"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409",
@@ -303,13 +362,6 @@
         "IRI-based" : "index.jsp?id=407"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=406",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
-      "labels" : {
-        "de" : "Materialwissenschaft",
-        "IRI-based" : "index.jsp?id=406"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=109",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
       "labels" : {
@@ -322,6 +374,13 @@
       "labels" : {
         "de" : "Physik der kondensierten Materie",
         "IRI-based" : "index.jsp?id=307"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=406",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
+      "labels" : {
+        "de" : "Materialwissenschaft",
+        "IRI-based" : "index.jsp?id=406"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=111",
@@ -352,6 +411,13 @@
         "IRI-based" : "index.jsp?id=312"
       }
     }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
+      "labels" : {
+        "de" : "Bauwesen und Architektur",
+        "IRI-based" : "index.jsp?id=410"
+      }
+    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=113",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
       "labels" : {
@@ -364,13 +430,6 @@
       "labels" : {
         "de" : "Astrophysik und Astronomie",
         "IRI-based" : "index.jsp?id=311"
-      }
-    }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste",
-      "labels" : {
-        "de" : "Bauwesen und Architektur",
-        "IRI-based" : "index.jsp?id=410"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112",
@@ -387,31 +446,10 @@
         "IRI-based" : "index.jsp?id=310"
       }
     } ],
-    "id" : "1"
+    "id" : "4"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "5",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "8",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "https://joetm.github.io/dfg-fachsystematik#Fach",
-    "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
+    "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Fach",
+    "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
     "instances" : 0,
     "label" : {
       "de" : "Fach",
@@ -495,18 +533,18 @@
         "IRI-based" : "110-02"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=110#110-04",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=110",
-      "labels" : {
-        "de" : "Differentielle Psychologie, Klinische Psychologie, Medizinische Psychologie, Methoden",
-        "IRI-based" : "110-04"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=305#305-02",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=305",
       "labels" : {
         "de" : "Lebensmittelchemie",
         "IRI-based" : "305-02"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=110#110-04",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=110",
+      "labels" : {
+        "de" : "Differentielle Psychologie, Klinische Psychologie, Medizinische Psychologie, Methoden",
+        "IRI-based" : "110-04"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=305#305-01",
@@ -607,13 +645,6 @@
         "IRI-based" : "205-02"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-05",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205",
-      "labels" : {
-        "de" : "Ernährungswissenschaften",
-        "IRI-based" : "205-05"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202#202-02",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202",
       "labels" : {
@@ -621,11 +652,11 @@
         "IRI-based" : "202-02"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202#202-03",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-05",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205",
       "labels" : {
-        "de" : "Organismische Interaktionen und chemische Ökologie pflanzlicher Systeme",
-        "IRI-based" : "202-03"
+        "de" : "Ernährungswissenschaften",
+        "IRI-based" : "205-05"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-04",
@@ -635,11 +666,11 @@
         "IRI-based" : "205-04"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202#202-04",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202#202-03",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202",
       "labels" : {
-        "de" : "Pflanzenphysiologie",
-        "IRI-based" : "202-04"
+        "de" : "Organismische Interaktionen und chemische Ökologie pflanzlicher Systeme",
+        "IRI-based" : "202-03"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-07",
@@ -647,6 +678,13 @@
       "labels" : {
         "de" : "Klinische Chemie und Pathobiochemie",
         "IRI-based" : "205-07"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202#202-04",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202",
+      "labels" : {
+        "de" : "Pflanzenphysiologie",
+        "IRI-based" : "202-04"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-06",
@@ -915,13 +953,6 @@
         "IRI-based" : "206-09"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=206#206-08",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=206",
-      "labels" : {
-        "de" : "Klinische Neurowissenschaften I - Neurologie, Neurochirurgie, Neuroradiologie",
-        "IRI-based" : "206-08"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=108#108-01",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=108",
       "labels" : {
@@ -929,11 +960,11 @@
         "IRI-based" : "108-01"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=108#108-02",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=108",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=206#206-08",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=206",
       "labels" : {
-        "de" : "Theoretische Philosophie",
-        "IRI-based" : "108-02"
+        "de" : "Klinische Neurowissenschaften I - Neurologie, Neurochirurgie, Neuroradiologie",
+        "IRI-based" : "206-08"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=206#206-07",
@@ -941,6 +972,13 @@
       "labels" : {
         "de" : "Molekulare und Zelluläre Neurologie, Neuropathologie",
         "IRI-based" : "206-07"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=108#108-02",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=108",
+      "labels" : {
+        "de" : "Theoretische Philosophie",
+        "IRI-based" : "108-02"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=206#206-06",
@@ -1230,18 +1268,18 @@
         "IRI-based" : "104-03"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=201#201-05",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=201",
-      "labels" : {
-        "de" : "Allgemeine Genetik",
-        "IRI-based" : "201-05"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=104#104-02",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=104",
       "labels" : {
         "de" : "Einzelsprachwissenschaften",
         "IRI-based" : "104-02"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=201#201-05",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=201",
+      "labels" : {
+        "de" : "Allgemeine Genetik",
+        "IRI-based" : "201-05"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=406#406-05",
@@ -1335,13 +1373,6 @@
         "IRI-based" : "409-07"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409#409-01",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409",
-      "labels" : {
-        "de" : "Theoretische Informatik",
-        "IRI-based" : "409-01"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-01",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410",
       "labels" : {
@@ -1349,11 +1380,11 @@
         "IRI-based" : "410-01"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-02",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409#409-01",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409",
       "labels" : {
-        "de" : "Städtebau/Stadtentwicklung, Raumplanung, Verkehrs- und Infrastrukturplanung, Landschaftsplanung",
-        "IRI-based" : "410-02"
+        "de" : "Theoretische Informatik",
+        "IRI-based" : "409-01"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409#409-02",
@@ -1363,11 +1394,11 @@
         "IRI-based" : "409-02"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-03",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-02",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410",
       "labels" : {
-        "de" : "Baustoffwissenschaften, Bauchemie, Bauphysik",
-        "IRI-based" : "410-03"
+        "de" : "Städtebau/Stadtentwicklung, Raumplanung, Verkehrs- und Infrastrukturplanung, Landschaftsplanung",
+        "IRI-based" : "410-02"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=409#409-03",
@@ -1375,6 +1406,13 @@
       "labels" : {
         "de" : "Sicherheit und Verlässlichkeit",
         "IRI-based" : "409-03"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-03",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410",
+      "labels" : {
+        "de" : "Baustoffwissenschaften, Bauchemie, Bauphysik",
+        "IRI-based" : "410-03"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=410#410-04",
@@ -1405,18 +1443,18 @@
         "IRI-based" : "112-01"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306#306-01",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306",
-      "labels" : {
-        "de" : "Präparative und Physikalische Chemie von Polymeren",
-        "IRI-based" : "306-01"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112#112-02",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112",
       "labels" : {
         "de" : "Wirtschaftspolitik und Finanzwissenschaften",
         "IRI-based" : "112-02"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306#306-01",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306",
+      "labels" : {
+        "de" : "Präparative und Physikalische Chemie von Polymeren",
+        "IRI-based" : "306-01"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112#112-03",
@@ -1426,13 +1464,6 @@
         "IRI-based" : "112-03"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306#306-03",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306",
-      "labels" : {
-        "de" : "Polymermaterialien",
-        "IRI-based" : "306-03"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112#112-04",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112",
       "labels" : {
@@ -1440,11 +1471,11 @@
         "IRI-based" : "112-04"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112#112-05",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306#306-03",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306",
       "labels" : {
-        "de" : "Wirtschafts- und Sozialgeschichte",
-        "IRI-based" : "112-05"
+        "de" : "Polymermaterialien",
+        "IRI-based" : "306-03"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=306#306-02",
@@ -1452,6 +1483,13 @@
       "labels" : {
         "de" : "Experimentelle und Theoretische Polymerphysik",
         "IRI-based" : "306-02"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112#112-05",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=112",
+      "labels" : {
+        "de" : "Wirtschafts- und Sozialgeschichte",
+        "IRI-based" : "112-05"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=101#101-02",
@@ -1566,18 +1604,18 @@
         "IRI-based" : "205-20"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-23",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205",
-      "labels" : {
-        "de" : "Urologie",
-        "IRI-based" : "205-23"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105#105-01",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105",
       "labels" : {
         "de" : "Ältere deutsche Literatur",
         "IRI-based" : "105-01"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-23",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205",
+      "labels" : {
+        "de" : "Urologie",
+        "IRI-based" : "205-23"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-22",
@@ -1608,13 +1646,6 @@
         "IRI-based" : "205-27"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-26",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205",
-      "labels" : {
-        "de" : "Herz-, Thorax-, Gefäßchirurgie",
-        "IRI-based" : "205-26"
-      }
-    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105#105-04",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105",
       "labels" : {
@@ -1622,11 +1653,11 @@
         "IRI-based" : "105-04"
       }
     }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105#105-03",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105",
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-26",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205",
       "labels" : {
-        "de" : "Europäische und Amerikanische Literaturen",
-        "IRI-based" : "105-03"
+        "de" : "Herz-, Thorax-, Gefäßchirurgie",
+        "IRI-based" : "205-26"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-29",
@@ -1634,6 +1665,13 @@
       "labels" : {
         "de" : "Hals-Nasen-Ohrenheilkunde",
         "IRI-based" : "205-29"
+      }
+    }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105#105-03",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=105",
+      "labels" : {
+        "de" : "Europäische und Amerikanische Literaturen",
+        "IRI-based" : "105-03"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=205#205-28",
@@ -1762,6 +1800,13 @@
         "IRI-based" : "402-02"
       }
     }, {
+      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=111#111-04",
+      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=111",
+      "labels" : {
+        "de" : "Politikwissenschaft",
+        "IRI-based" : "111-04"
+      }
+    }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=402#402-04",
       "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=402",
       "labels" : {
@@ -1774,13 +1819,6 @@
       "labels" : {
         "de" : "Analytik, Methodenentwicklung (Chemie)",
         "IRI-based" : "304-01"
-      }
-    }, {
-      "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=111#111-04",
-      "baseIri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=111",
-      "labels" : {
-        "de" : "Politikwissenschaft",
-        "IRI-based" : "111-04"
       }
     }, {
       "iri" : "http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=111#111-03",
@@ -1909,55 +1947,17 @@
         "IRI-based" : "404-01"
       }
     } ],
-    "id" : "4"
-  }, {
-    "iri" : "https://joetm.github.io/dfg-fachsystematik#Kategorie",
-    "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
-    "instances" : 0,
-    "label" : {
-      "de" : "Kategorie",
-      "IRI-based" : "Kategorie"
-    },
-    "individuals" : [ {
-      "iri" : "https://joetm.github.io/dfg-fachsystematik#Naturwissenschaften",
-      "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
-      "labels" : {
-        "de" : "Naturwissenschaften",
-        "IRI-based" : "Naturwissenschaften"
-      }
-    }, {
-      "iri" : "https://joetm.github.io/dfg-fachsystematik#Lebenswissenschaften",
-      "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
-      "labels" : {
-        "de" : "Lebenswissenschaften",
-        "IRI-based" : "Lebenswissenschaften"
-      }
-    }, {
-      "iri" : "https://joetm.github.io/dfg-fachsystematik#Ingenieurwissenschaften",
-      "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
-      "labels" : {
-        "de" : "Ingenieurwissenschaften",
-        "IRI-based" : "Ingenieurwissenschaften"
-      }
-    }, {
-      "iri" : "https://joetm.github.io/dfg-fachsystematik#Geistes-_und_Sozialwissenschaften",
-      "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
-      "labels" : {
-        "de" : "Geistes- und Sozialwissenschaften",
-        "IRI-based" : "Geistes-_und_Sozialwissenschaften"
-      }
-    } ],
-    "id" : "7"
+    "id" : "1"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "3",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "6",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "9",
     "type" : "owl:disjointWith"
@@ -1969,46 +1969,46 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://joetm.github.io/dfg-fachsystematik#FK-Nr",
-    "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
+    "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#Fach-Nr",
+    "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
     "range" : "2",
     "label" : {
-      "de" : "Fachkollegium-Nr.",
-      "IRI-based" : "FK-Nr"
+      "de" : "Fach-Nr.",
+      "IRI-based" : "Fach-Nr"
     },
     "domain" : "1",
     "attributes" : [ "functional", "datatype" ],
     "id" : "0"
   }, {
-    "iri" : "https://joetm.github.io/dfg-fachsystematik#Fach-Nr",
-    "baseIri" : "https://joetm.github.io/dfg-fachsystematik",
     "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#FK-Nr",
+    "baseIri" : "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl",
+    "range" : "6",
     "label" : {
-      "de" : "Fach-Nr.",
-      "IRI-based" : "Fach-Nr"
+      "de" : "Fachkollegium-Nr.",
+      "IRI-based" : "FK-Nr"
     },
     "domain" : "4",
     "attributes" : [ "functional", "datatype" ],
-    "id" : "3"
+    "id" : "8"
   }, {
-    "range" : "7",
+    "range" : "4",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "6"
-  }, {
-    "range" : "1",
-    "domain" : "4",
     "attributes" : [ "object", "anonymous" ],
     "id" : "9"
   }, {
-    "range" : "7",
-    "domain" : "4",
+    "range" : "5",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "10"
   }, {
     "iri" : "http://purl.org/dc/terms/isPartOf",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "8",
+    "range" : "7",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2021,7 +2021,7 @@
       "IRI-based" : "isPartOf",
       "en" : "Is Part Of"
     },
-    "domain" : "8",
+    "domain" : "7",
     "comment" : {
       "en" : "A related resource in which the described resource is physically or logically included."
     },
