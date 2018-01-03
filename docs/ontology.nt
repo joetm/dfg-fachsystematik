@@ -47,10 +47,16 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fachkollegium> .
+<http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr> <http://www.w3.org/2000/01/rdf-schema#label> "Fachkollegium-Nr."@de .
 # 
 # http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach> .
+<http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr> <http://www.w3.org/2000/01/rdf-schema#label> "Fach-Nr."@de .
 # 
 # 

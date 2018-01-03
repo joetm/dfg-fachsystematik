@@ -38,12 +38,18 @@
 #################################################################
 
 ###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#FK-Nr
-:FK-Nr rdf:type owl:DatatypeProperty ;
+:FK-Nr rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :Fachkollegium ;
+       rdfs:range xsd:string ;
        rdfs:label "Fachkollegium-Nr."@de .
 
 
 ###  http://ontologies.mfn-berlin.de/dfg-fachsystematik#Fach-Nr
-:Fach-Nr rdf:type owl:DatatypeProperty ;
+:Fach-Nr rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Fach ;
+         rdfs:range xsd:string ;
          rdfs:label "Fach-Nr."@de .
 
 
