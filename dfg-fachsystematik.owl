@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#"
-     xml:base="https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl"
+<rdf:RDF xmlns="https://fub-hcc.github.io/IKON-ontology/imports/dfg/fachsystematik/dfg-fachsystematik.owl#"
+     xml:base="https://fub-hcc.github.io/IKON-ontology/imports/dfg/fachsystematik/dfg-fachsystematik.owl"
      xmlns:fk201="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=201#"
      xmlns:fk202="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=202#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -56,8 +56,8 @@
      xmlns:fk316="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=316#"
      xmlns:fk313="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=313#"
      xmlns:fk314="http://www.dfg.de/dfg_profil/gremien/fachkollegien/liste/index.jsp?id=314#">
-    <owl:Ontology rdf:about="https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl">
-        <owl:versionIRI rdf:resource="https://joetm.github.io/dfg-fachsystematik#version-1.0.0"/>
+    <owl:Ontology rdf:about="https://fub-hcc.github.io/IKON-ontology/imports/dfg/fachsystematik/dfg-fachsystematik.owl">
+        <owl:versionIRI rdf:resource="https://fub-hcc.github.io/IKON-ontology/imports/dfg/fachsystematik/dfg-fachsystematik.owl#version-1.0.0"/>
         <rdfs:label xml:lang="de">DFG Fachsystematik</rdfs:label>
         <rdfs:isDefinedBy>Jonas Oppenlaender</rdfs:isDefinedBy>
     </owl:Ontology>
