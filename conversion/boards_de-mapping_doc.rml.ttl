@@ -1,0 +1,78 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix dfg: <https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix terms: <http://purl.org/dc/terms/> .
+
+<#ReviewBoardMapping>
+  rml:logicalSource [
+    rml:source "boards_de-dfg-2018-03-29.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.reviewBoards[*]"
+  ];
+
+  rr:subjectMap [
+    rml:reference "$.href";
+    rr:class owl:NamedIndividual, dfg:Fachkollegium
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dfg:FK-Nr;
+    rr:objectMap [
+      rml:reference "$.id";
+      rr:datatype xsd:int
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "$.title";
+      rr:language "de"
+    ]
+  ];
+
+    rr:predicateObjectMap [
+    rr:predicate terms:isPartOf;
+    rr:objectMap [
+      rr:template "http://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher/index.jsp?id={$.board}"
+    ]
+  ].
+
+<#SubjectAreaMapping>
+  rml:logicalSource [
+    rml:source "boards_de-dfg-2018-03-29.json";
+    rml:referenceFormulation ql:JSONPath;
+    rml:iterator "$.subjectAreas[*]"
+  ];
+
+  rr:subjectMap [
+    rml:reference "$.href";
+    rr:class owl:NamedIndividual, dfg:Fach
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate dfg:FK-Nr;
+    rr:objectMap [
+      rml:reference "$.id";
+      rr:datatype xsd:string 
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label;
+    rr:objectMap [
+      rml:reference "$.title";
+      rr:language "de"
+    ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate terms:isPartOf;
+    rr:objectMap [
+      rr:template "http://www.dfg.de/dfg_profil/gremien/fachkollegien/faecher/index.jsp?id={$.reviewBoard}"
+    ]
+  ].
