@@ -38,7 +38,7 @@
     rr:predicateObjectMap [
     rr:predicate terms:isPartOf;
     rr:objectMap [
-      rr:template "https://raw.githubusercontent.com/joetm/dfg-fachsystematik/master/dfg-fachsystematik.owl#{$.board}" 
+      rr:template "http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp?id={$.board}" 
     ]
   ].
 
@@ -70,9 +70,9 @@
     ]
   ];
 
-    rr:predicateObjectMap [
+  rr:predicateObjectMap [
     rr:predicate terms:isPartOf;
     rr:objectMap [
-      rml:reference "$.reviewBoard" 
+      rr:template "http://www.dfg.de/en/dfg_profile/statutory_bodies/review_boards/subject_areas/index.jsp?id={$.reviewBoard}";
     ]
   ].
